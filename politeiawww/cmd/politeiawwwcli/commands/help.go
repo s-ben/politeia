@@ -14,6 +14,10 @@ func (cmd *HelpCmd) Execute(args []string) error {
 		fmt.Printf("%s\n", LoginCmdHelpMsg)
 	}
 
+	if cmd.Args.Topic == "logout" {
+		fmt.Printf("%s\n", LogoutCmdHelpMsg)
+	}
+
 	if cmd.Args.Topic == "authorizevote" {
 		fmt.Printf("%s\n", AuthorizeVoteCmdHelpMsg)
 	}
@@ -21,7 +25,7 @@ func (cmd *HelpCmd) Execute(args []string) error {
 	if cmd.Args.Topic == "newuser" {
 		fmt.Printf("%s\n", NewUserCmdHelpMsg)
 	}
-	
+
 	if cmd.Args.Topic == "newproposal" {
 		fmt.Printf("%s\n", NewProposalCmdHelpMsg)
 	}
