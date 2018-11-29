@@ -13,6 +13,31 @@ import (
 	"github.com/decred/politeia/util"
 )
 
+// Help message displayed for the command 'politeiawwwcli help newproposal'
+var NewProposalCmdHelpMsg = `newproposal "markdownFile" "attachmentFiles" 
+
+Submit a new proposal to Politeia. Proposal must be a 
+markdown file. Attachment files can be of any file type. 
+
+Arguments:
+1. markdownFile      (string, required)   Proposal 
+2. attachmentFiles   (string, optional)   Attachments 
+
+Result:
+
+{
+  "files": [
+    {
+      "name": Filename 
+      "mime": Mime type 
+      "digest": File digest 
+      "payload": File payload 
+    }
+  ],
+  "publickey": Public key of user
+  "signature": Signed merkel root of files in proposal 
+}`
+
 type NewProposalCmd struct {
 	Args struct {
 		Markdown    string   `positional-arg-name:"markdownFile"`

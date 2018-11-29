@@ -8,7 +8,7 @@ import (
 	"github.com/decred/politeia/util"
 )
 
-// Help message displayed for the command 'politeiawwwcli help login'
+// Help message displayed for the command 'politeiawwwcli help newuser'
 var NewUserCmdHelpMsg = `newuser "email" "username" "password" 
 
 Create a new Politeia user. Users can be created by supplying all the arguments

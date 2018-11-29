@@ -21,6 +21,10 @@ func (cmd *HelpCmd) Execute(args []string) error {
 	if cmd.Args.Topic == "newuser" {
 		fmt.Printf("%s\n", NewUserCmdHelpMsg)
 	}
+	
+	if cmd.Args.Topic == "newproposal" {
+		fmt.Printf("%s\n", NewProposalCmdHelpMsg)
+	}
 
 	return nil
 }
