@@ -14,5 +14,10 @@ func (cmd *HelpCmd) Execute(args []string) error {
 		fmt.Printf("%s\n", LoginCmdHelpMsg)
 	}
 
+	if cmd.Args.Topic == "authorizevote" {
+		fmt.Printf("%s\n", AuthorizeVoteCmdHelpMsg)
+	}
+
 	return nil
 }
+
