@@ -8,9 +8,12 @@ import (
 
 // Help message displayed for the command 'politeiawwwcli help getproposal'
 var GetProposalCmdHelpMsg = `getproposal "token" 
+
 Fetch a proposal by censorship token. 
+
 Arguments:
 1. token      (string, required)   Censorship token
+
 Result:
 {
   "proposal": {
