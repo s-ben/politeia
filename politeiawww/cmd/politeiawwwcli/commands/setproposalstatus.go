@@ -14,9 +14,9 @@ var SetProposalStatusCmdHelpMsg = `setproposalstatus "token" "status"
 Set the status of a proposal (admin).
 
 Arguments:
-1. Token      (string, required)   Proposal censorship token
-2. Status     (string, required)   New status (censored, public, abandoned)
-3. Message    (string, required if censoring proposal)  Status change message
+1. token      (string, required)   Proposal censorship token
+2. status     (string, required)   New status (censored, public, abandoned)
+3. message    (string, required if censoring proposal)  Status change message
 
 Result:
 {

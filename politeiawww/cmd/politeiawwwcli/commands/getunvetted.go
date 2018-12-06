@@ -6,10 +6,11 @@ import (
 	"github.com/decred/politeia/politeiawww/api/v1"
 )
 
-// Help message displayed for the command 'politeiawwwcli help getunvetted'
-var UserProposalsCmdHelpMsg = `getunvetted 
 
-Fetch all proposals submitted by a specific user.
+// Help message displayed for the command 'politeiawwwcli help getunvetted'
+var GetUnvettedCmdHelpMsg = `getunvetted 
+
+Fetch all unvetted proposals. 
 
 Arguments:
 None
@@ -44,6 +45,7 @@ Result:
     }
   ]
 }`
+
 
 type GetUnvettedCmd struct {
 	Before string `long:"before" optional:"true" description:"A proposal censorship token; if provided, the page of proposals returned will end right before the proposal whose token is provided."`

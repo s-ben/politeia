@@ -35,8 +35,18 @@ func (cmd *HelpCmd) Execute(args []string) error {
 		fmt.Printf("%s\n", UserProposalsCmdHelpMsg)
 	case "getunvetted":
 		fmt.Printf("%s\n", GetUnvettedCmdHelpMsg)
+	case "getvetted":
+		fmt.Printf("%s\n", GetVettedCmdHelpMsg)
 	case "setproposalstatus":
 		fmt.Printf("%s\n", SetProposalStatusCmdHelpMsg)
+	case "newcomment":
+		fmt.Printf("%s\n", NewCommentCmdHelpMsg)
+	case "getcomments":
+		fmt.Printf("%s\n", GetCommentsCmdHelpMsg)
+	case "censorcomment":
+		fmt.Printf("%s\n", CensorCommentCmdHelpMsg)
+	case "votecomment":
+		fmt.Printf("%s\n", VoteCommentCmdHelpMsg)
 	default:
 		fmt.Printf("invalid command\n")
 	}
