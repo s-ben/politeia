@@ -8,7 +8,7 @@ import (
 )
 
 // Help message displayed for the command 'politeiawwwcli help votecomment'
-var GetCommentsCmdHelpMsg = `votecomment "token" "commentID" "action"
+var VoteCommentCmdHelpMsg = `votecomment "token" "commentID" "action"
 
 Censor comment (admin).
 
